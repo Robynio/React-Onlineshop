@@ -1,5 +1,6 @@
 {
-  "name": "test-weather-app",
+  "name": "react-app-online-shop",
+  "author": "Robin Skladny",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

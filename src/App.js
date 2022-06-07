@@ -17,10 +17,10 @@ function App() {
     <div>
     <Navbar/>
     
-    <div className="container-md row row-cols-1 row-cols-md-4 g-4 pt-5 pb-5 gx-5 gy-5"
+    <div className="container-md row row-cols-1 row-cols-md-4 g-4 pt-5 pb-4 gx-5 gy-5"
     style={{margin:"auto"}}>
 
-    <Product1 name="Vegan Retro Sneaker 2" price="155€" id="2" img="https://cdn.shopify.com/s/files/1/0277/7736/8147/products/flamingos-life-retro-90s-sneakers-low-flamingos-life-512021_360x.jpg?v=1653263080"/>
+    <Product1 name="Vegan Retro Sneaker 1" price="165€" id="1" img="https://cdn.shopify.com/s/files/1/0277/7736/8147/products/flamingos-life-roland-v5-sneakers-low-flamingos-life-518225_360x.jpg?v=1646341825"/>
 
     <Product2 name="Vegan Retro Sneaker 2" price="155€" id="2" img="https://cdn.shopify.com/s/files/1/0277/7736/8147/products/flamingos-life-retro-90s-sneakers-low-flamingos-life-512021_360x.jpg?v=1653263080"/>
 

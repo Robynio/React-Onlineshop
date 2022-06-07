@@ -3,8 +3,7 @@ import React from 'react'
 function Product2(props) {
   return (
     <div>
-        {/*<div className="container-md row row-cols-1 row-cols-md-4 g-4 pt-5 gx-5 gy-5"
-    style={{margin:"auto"}}>*/}
+        
   <div className="col">
     <div className="card">
       <img src={props.img} className="card-img-top" alt="Product-2"/>
