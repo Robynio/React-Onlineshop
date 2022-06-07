@@ -1,0 +1,21 @@
+footer {
+  
+   // position: fixed;
+    bottom: 0;
+    background-color: #EAC846;
+    color: black;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+
+    span {
+      font-size: 1rem;
+      display: block;
+    }
+  }
+  
+  

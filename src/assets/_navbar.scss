@@ -1,0 +1,46 @@
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #EAC846;
+    align-items: center;
+    /* box-shadow:10px 0px 30px rgb(0, 0, 0); */
+    z-index: 1000;
+  }
+  
+  
+  
+  .nav-list {
+    list-style: none;
+    
+    display: flex;
+    /* width: 30%; */
+    font-size: 2rem;
+    justify-content: space-around;
+  
+    li a {
+      text-decoration: none;
+      color: black;
+    }
+  
+    .active {
+      font-weight: 700;
+    }
+  }
+  
+  
+  .logo-brand {
+    line-height:40px ;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 6rem;
+    /* height: 68px; */
+    color: rgb(0, 0, 0);
+    
+  }
+  
+  
+  
