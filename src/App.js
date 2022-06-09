@@ -1,44 +1,107 @@
-import React from "react";
+import React, { useState } from "react";
 import Footer from "./components/Footer";
+import GridSection from "./components/GridSection";
 import Navbar from "./components/Navbar";
-import Product1 from "./components/Product1";
-import Product2 from "./components/Product2";
-import Product3 from "./components/Product3";
-import Product4 from "./components/Product4";
-import Product5 from "./components/Product5";
-import Product6 from "./components/Product6";
-import Product7 from "./components/Product7";
-import Product8 from "./components/Product8";
-
-
+import ShoppingCart from "./components/ShoppingCart";
 
 function App() {
+  const [productsInCart, setProductsInCart] = useState([]);
+
+  let products = [
+    {
+      id: 1,
+      name: "Vegan Retro Sneaker 1",
+      price: 155,
+      image:
+        "https://cdn.shopify.com/s/files/1/0277/7736/8147/products/flamingos-life-retro-90s-sneakers-low-flamingos-life-512021_360x.jpg",
+    },
+    {
+      id: 2,
+      name: "Vegan Retro Sneaker 2",
+      price: 175,
+      image:
+        "https://cdn.shopify.com/s/files/1/0277/7736/8147/products/flamingos-life-old-80s-sneakers-high-flamingos-life-721073_360x.jpg",
+    },
+    {
+      id: 3,
+      name: "Vegan Retro Sneaker 3",
+      price: 135,
+      image:
+        "https://cdn.shopify.com/s/files/1/0277/7736/8147/products/flamingos-life-classic-70s-sneakers-low-flamingos-life-339445_360x.jpg",
+    },
+    {
+      id: 4,
+      name: "Vegan Retro Sneaker 4",
+      price: 155,
+      image:
+        "https://cdn.shopify.com/s/files/1/0277/7736/8147/products/flamingos-life-retro-90s-sneakers-low-flamingos-life-434830_360x.jpg",
+    },
+    {
+      id: 5,
+      name: "Vegan Retro Sneaker 5",
+      price: 175,
+      image:
+        "https://cdn.shopify.com/s/files/1/0277/7736/8147/products/flamingos-life-old-80s-sneakers-high-flamingos-life-793921_360x.jpg",
+    },
+    {
+      id: 6,
+      name: "Vegan Retro Sneaker 6",
+      price: 135,
+      image:
+        "https://cdn.shopify.com/s/files/1/0277/7736/8147/products/flamingos-life-roland-v3-2021-sneakers-low-flamingos-life-313622_360x.jpg",
+    },
+    {
+      id: 7,
+      name: "Vegan Retro Sneaker 7",
+      price: 175,
+      image:
+        "https://cdn.shopify.com/s/files/1/0277/7736/8147/products/flamingos-life-old-80s-sneakers-high-flamingos-life-567566_360x.jpg",
+    },
+    {
+      id: 8,
+      name: "Vegan Retro Sneaker 8",
+      price: 155,
+      image:
+        "https://cdn.shopify.com/s/files/1/0277/7736/8147/products/flamingos-life-roland-v5-sneakers-low-flamingos-life-518225_360x.jpg",
+    },
+  ];
+
+  // let productsInCart = [];
+
+  const onAddProduct = (id) => {
+    console.log("app: " + id);
+    let selectedProduct = products.filter((p) => p.id === id);
+    let product = selectedProduct[0];
+    console.log("Adding Item: " + product.name + " Price: " + product.price);
+    setProductsInCart([...productsInCart, product]);
+  };
+
+  let totalPrice = null;
+  let price = null;
+
+  // const getTotalPrices = (prevState) => {
+  //   totalPrice = prevState.map((data) => {
+  //     price = data.price;
+
+  //     for (let index = 0; index < price.length; index++) {
+  //       totalPrice += price[index];
+  //     }
+  //   });
+  //   console.log(totalPrice);
+  // };
+
+  // const deleteItem = (id) => {
+  //   setShoppingList((prevState) => {
+  //     prevState.filter((element) => element.id !== id);
+  //   });
+  // };
+
   return (
     <div>
-    <Navbar/>
-    
-    <div className="container-md row row-cols-1 row-cols-md-4 g-4 pt-5 pb-4 gx-5 gy-5"
-    style={{margin:"auto"}}>
-
-    <Product1 name="Vegan Retro Sneaker 1" price="165€" id="1" img="https://cdn.shopify.com/s/files/1/0277/7736/8147/products/flamingos-life-roland-v5-sneakers-low-flamingos-life-518225_360x.jpg?v=1646341825"/>
-
-    <Product2 name="Vegan Retro Sneaker 2" price="155€" id="2" img="https://cdn.shopify.com/s/files/1/0277/7736/8147/products/flamingos-life-retro-90s-sneakers-low-flamingos-life-512021_360x.jpg?v=1653263080"/>
-
-    <Product3 name="Vegan Retro Sneaker 3" price="145€" id="3" img="https://cdn.shopify.com/s/files/1/0277/7736/8147/products/flamingos-life-classic-70s-sneakers-low-flamingos-life-339445_360x.jpg?v=1650475462"/>
-
-    <Product4 name="Vegan Retro Sneaker 4" price="175€" id="4" img="https://cdn.shopify.com/s/files/1/0277/7736/8147/products/flamingos-life-old-80s-sneakers-high-flamingos-life-721073_360x.jpg?v=1631706130"/>
-
-    <Product5 name="Vegan Retro Sneaker 5" price="155€" id="5" img="https://cdn.shopify.com/s/files/1/0277/7736/8147/products/flamingos-life-retro-90s-sneakers-low-flamingos-life-434830_360x.jpg?v=1633458170"/>
-
-    <Product6 name="Vegan Retro Sneaker 6" price="175€" id="6" img="https://cdn.shopify.com/s/files/1/0277/7736/8147/products/flamingos-life-old-80s-sneakers-high-flamingos-life-793921_360x.jpg?v=1631704789"/>
-
-    <Product7 name="Vegan Retro Sneaker 7" price="125€" id="7" img="https://cdn.shopify.com/s/files/1/0277/7736/8147/products/flamingos-life-roland-v3-2021-sneakers-low-flamingos-life-313622_360x.jpg?v=1628720232"/>
-
-    <Product8 name="Vegan Retro Sneaker 8" price="165€" id="8" img="https://cdn.shopify.com/s/files/1/0277/7736/8147/products/flamingos-life-old-80s-sneakers-high-flamingos-life-567566_360x.jpg?v=1631706119"/>
-    </div>
-
-    <Footer/>
-    
+      <Navbar />
+      <ShoppingCart productsInCart={productsInCart} />
+      <GridSection products={products} onAddProduct={onAddProduct} />
+      <Footer />
     </div>
   );
 }

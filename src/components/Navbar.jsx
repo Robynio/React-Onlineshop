@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Navbar() {
+function Navbar(props) {
   return (
     <div>
         <nav className='nav shadow rounded'>
@@ -14,8 +14,9 @@ function Navbar() {
         </li> 
         </ul>
         <div>
-            cart
+        <button className="btn btn-primary" type="button" data-bs-toggle="offcanvas" href="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>
         </div>
+        
         </nav>
     </div>
   )

@@ -10,10 +10,13 @@ function Product3(props) {
       <img src={props.img} className="card-img-top" alt="..."/>
       <div className="card-body">
         <h5 className="card-title">{props.name}</h5>
-        <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p className="card-text">Absolut stylische Sneaker, völlig tierfrei & 100% vegan und fair hergestellt aus natürlichen Materialien die biologisch abbaubar sind.</p>
         <div id='productPrice'>
       {props.price}
   </div>
+  <div>
+      {props.button}
+    </div>
       </div>
     </div>
   </div>

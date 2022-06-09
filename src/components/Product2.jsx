@@ -13,6 +13,9 @@ function Product2(props) {
         <div id='productPrice'>
       {props.price}
   </div>
+  <div>
+      {props.button}
+    </div>
       </div>
     </div>
   </div>
