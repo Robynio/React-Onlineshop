@@ -67,29 +67,10 @@ function App() {
   ];
 
   const onAddProduct = (id) => {
-    console.log("app: " + id);
     let selectedProduct = products.filter((p) => p.id === id);
     let product = selectedProduct[0];
-    console.log("Adding Item: " + product.name + " Price: " + product.price);
     setProductsInCart([...productsInCart, product]);
   };
-
-  // const getTotalPrices = (prevState) => {
-  //   totalPrice = prevState.map((data) => {
-  //     price = data.price;
-
-  //     for (let index = 0; index < price.length; index++) {
-  //       totalPrice += price[index];
-  //     }
-  //   });
-  //   console.log(totalPrice);
-  // };
-
-  // const deleteItem = (id) => {
-  //   setShoppingList((prevState) => {
-  //     prevState.filter((element) => element.id !== id);
-  //   });
-  // };
 
   return (
     <div>

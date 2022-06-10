@@ -12,17 +12,15 @@ function ShoppingCart(props) {
   }
 
   let totalPrice = getTotalPrice(props.productsInCart);
-  console.log(totalPrice);
+  let discountPrice = (totalPrice * 0.85).toFixed(2);
 
   function getDiscount(event) {
     if (event.key === "Enter") {
       setDiscount(
-        "You saved 15%! Your total price is: " + totalPrice * 0.85 + " Euros."
+        "You saved 15%! Your total price is: " + discountPrice + " Euros."
       );
     }
   }
-
-  console.log("setDiscount: " + setDiscount);
 
   return (
     <div

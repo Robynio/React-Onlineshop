@@ -16,7 +16,7 @@
   
   #title {
     @media(max-width: 576px){
-      font-size: 1rem;
+      font-size: 1.2rem;
       padding-top: 14px;
     }
   }
@@ -28,14 +28,14 @@
     font-size: 2rem;
     justify-content: space-between;
 
-    
-  
     li a {
       text-decoration: none;
       color: black;
     }
-  
-   
+  }
+
+  #shop-cart-symbol{
+    width: 45px;
   }
   
   

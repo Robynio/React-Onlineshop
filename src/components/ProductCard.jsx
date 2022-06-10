@@ -16,7 +16,6 @@ export default function ProductCard(props) {
             <div id="productPrice">€ {props.price}</div>
             <button
               onClick={() => {
-                console.log("clicked" + props.id);
                 props.onAddProduct(props.id);
               }}
               type="button"

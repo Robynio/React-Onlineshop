@@ -1,7 +1,7 @@
 import React from "react";
 import ShopCartPic from "../assets/images/shoppCart.png";
 
-function Navbar(props) {
+function Navbar() {
   return (
     <div>
       <nav className="nav shadow rounded">
@@ -14,7 +14,7 @@ function Navbar(props) {
               href="#offcanvasRight"
               aria-controls="offcanvasRight"
             >
-              <img src={ShopCartPic} alt="shopCart" style={{ width: "45px" }} />
+              <img src={ShopCartPic} alt="shopCart" id="shop-cart-symbol" />
             </a>
           </li>
         </ul>
