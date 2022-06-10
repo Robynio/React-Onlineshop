@@ -11,7 +11,7 @@
 
 ## Getting started
 
-# Prerequisites
+## Prerequisites
 
 ```javascript
     npm install npm@latest -g
