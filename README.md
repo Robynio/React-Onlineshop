@@ -6,7 +6,7 @@
 
 ## Click here
 
-[Fly Vegan Shoe Co. :)](https://effervescent-taiyaki-336ef8.netlify.app/)
+[Fly Veggie Shoes Co. :)](https://effervescent-taiyaki-336ef8.netlify.app/)
 
 ## Built With
 
