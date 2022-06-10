@@ -6,13 +6,12 @@
 
 ## Built With
 
-+ [React.js](https://reactjs.org/docs/getting-started.html)
-+ [Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
-
+- [React.js](https://reactjs.org/docs/getting-started.html)
+- [Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
 
 ## Prerequisites
 
-```javascript
+```
     npm install npm@latest -g
 ```
 
@@ -41,6 +40,3 @@
 The App provides the basic functionality of an online shop: display the item´s properties and enable the client to put the desired products in a shopping cart.
 The cart displays the item´s prices when the cart icon is clicked upon and sums up the total price.
 An extra is the coupon function which calculates a discount when a code is typed in the input field and hit enter.
-
-
-
