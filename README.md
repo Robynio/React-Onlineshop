@@ -9,7 +9,6 @@
 + [React.js](https://reactjs.org/docs/getting-started.html)
 + [Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
 
-## Getting started
 
 ## Prerequisites
 
