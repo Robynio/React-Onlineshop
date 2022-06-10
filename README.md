@@ -17,23 +17,24 @@
     npm install npm@latest -g
 ```
 
-## Installation
+## Installation and Run App
 
 1. Clone the repo
 
 ```javascript
-    
+    https://github.com/Robynio/onlineShop_reactApp.git
 ```
 
-## Available Scripts
+2. Install packages
 
-In the project directory, you can run:
+```javascript
+    npm install
+```
 
-### `npm start`
+3. Run App: In the project directory, run:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```javascript
+    npm start
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
