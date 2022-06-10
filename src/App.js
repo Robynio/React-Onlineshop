@@ -66,8 +66,6 @@ function App() {
     },
   ];
 
-  // let productsInCart = [];
-
   const onAddProduct = (id) => {
     console.log("app: " + id);
     let selectedProduct = products.filter((p) => p.id === id);
@@ -75,9 +73,6 @@ function App() {
     console.log("Adding Item: " + product.name + " Price: " + product.price);
     setProductsInCart([...productsInCart, product]);
   };
-
-  let totalPrice = null;
-  let price = null;
 
   // const getTotalPrices = (prevState) => {
   //   totalPrice = prevState.map((data) => {

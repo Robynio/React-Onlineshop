@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 function ShoppingCart(props) {
+  const [discount, setDiscount] = useState();
+
   function getTotalPrice() {
     let sum = 0;
     for (let i = 0; i < props.productsInCart.length; i++) {
@@ -8,6 +10,19 @@ function ShoppingCart(props) {
     }
     return sum;
   }
+
+  let totalPrice = getTotalPrice(props.productsInCart);
+  console.log(totalPrice);
+
+  function getDiscount(event) {
+    if (event.key === "Enter") {
+      setDiscount(
+        "You saved 15%! Your total price is: " + totalPrice * 0.85 + " Euros."
+      );
+    }
+  }
+
+  console.log("setDiscount: " + setDiscount);
 
   return (
     <div
@@ -34,7 +49,23 @@ function ShoppingCart(props) {
           );
         })}
         <hr />
-        <div>Total Price {getTotalPrice(props.productsInCart)} Euros</div>
+        <div>Total Price {totalPrice} Euros</div>
+
+        <hr
+          style={{
+            border: "none",
+            borderTop: "1px dashed black",
+            height: "1px",
+            color: "#000000",
+            background: "transparent",
+          }}
+        />
+        <input
+          type="text"
+          placeholder="Enter your coupon code"
+          onKeyDown={getDiscount}
+        />
+        <div>{discount}</div>
       </div>
 
       <div>
