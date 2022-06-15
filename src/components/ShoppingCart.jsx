@@ -58,12 +58,17 @@ function ShoppingCart(props) {
             background: "transparent",
           }}
         />
+        <br />
+
         <input
           type="text"
           placeholder="Enter your coupon code"
           onKeyDown={getDiscount}
         />
-        <div>{discount}</div>
+        <div>
+          <br />
+          {discount}
+        </div>
       </div>
 
       <div>
