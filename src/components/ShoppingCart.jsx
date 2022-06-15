@@ -17,7 +17,9 @@ function ShoppingCart(props) {
   function getDiscount(event) {
     if (event.key === "Enter") {
       setDiscount(
-        "You saved 15%! Your total price is: " + discountPrice + " Euros."
+        <div>
+          You saved 15%! Your total price is: <b>{discountPrice} Euros</b>
+        </div>
       );
     }
   }
@@ -42,12 +44,21 @@ function ShoppingCart(props) {
         {props.productsInCart.map((product) => {
           return (
             <div>
+              <div>
+                <img
+                  src={product.image}
+                  style={{ width: "150px" }}
+                  alt="product"
+                />
+              </div>
               {product.name}: {product.price} Euros
             </div>
           );
         })}
         <hr />
-        <div>Total Price {totalPrice} Euros</div>
+        <div>
+          Total Price <b>{totalPrice} Euros</b>
+        </div>
 
         <hr
           style={{
@@ -58,7 +69,6 @@ function ShoppingCart(props) {
             background: "transparent",
           }}
         />
-        <br />
 
         <input
           type="text"
