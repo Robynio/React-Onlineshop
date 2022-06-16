@@ -51,13 +51,13 @@ function ShoppingCart(props) {
                   alt="product"
                 />
               </div>
-              {product.name}: {product.price} Euros
+              {product.name}: {product.price},- Euros
             </div>
           );
         })}
         <hr />
         <div>
-          Total Price <b>{totalPrice} Euros</b>
+          Total Price: <b>{totalPrice},- Euros</b>
         </div>
 
         <hr
