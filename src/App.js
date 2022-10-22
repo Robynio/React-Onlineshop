@@ -13,7 +13,7 @@ function App() {
       name: "Vegan Retro Sneaker 1",
       price: 155,
       image:
-        "https://cdn.shopify.com/s/files/1/0277/7736/8147/products/flamingos-life-retro-90s-sneakers-low-flamingos-life-512021_360x.jpg",
+        "https://cdn.shopify.com/s/files/1/0277/7736/8147/products/flamingos-life-retro-90s-sneakers-low-flamingos-life-970783_360x.jpg",
     },
     {
       id: 2,
@@ -41,14 +41,14 @@ function App() {
       name: "Vegan Retro Sneaker 5",
       price: 175,
       image:
-        "https://cdn.shopify.com/s/files/1/0277/7736/8147/products/flamingos-life-old-80s-sneakers-high-flamingos-life-793921_360x.jpg",
+        "https://cdn.shopify.com/s/files/1/0277/7736/8147/products/flamingos-life-old-80s-sneakers-high-flamingos-life-128433_360x.jpg",
     },
     {
       id: 6,
       name: "Vegan Retro Sneaker 6",
       price: 135,
       image:
-        "https://cdn.shopify.com/s/files/1/0277/7736/8147/products/flamingos-life-roland-v3-2021-sneakers-low-flamingos-life-313622_360x.jpg",
+        "https://cdn.shopify.com/s/files/1/0277/7736/8147/products/flamingos-life-roland-v7-sneakers-low-flamingos-life-836847_360x.jpg",
     },
     {
       id: 7,
