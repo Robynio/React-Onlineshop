@@ -10,7 +10,7 @@ export default function ProductCard(props) {
             <h5 className="card-title">{props.name}</h5>
             <p className="card-text">
               Absolut stylische Sneaker, völlig tierfrei & 100% vegan und fair
-              hergestellt aus natürlichen Materialien die biologisch abbaubar
+              hergestellt aus natürlichen Materialien, die biologisch abbaubar
               sind.
             </p>
             <div id="productPrice">€ {props.price}</div>
