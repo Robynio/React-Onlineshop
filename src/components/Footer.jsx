@@ -6,7 +6,9 @@ export default function Footer() {
     <footer className="shadow-lg p-4 rounded">
       <span>&copy; Robin Skladny 2022</span>
       <div style={{ paddingLeft: "7px" }}>
-        <img src={myLogo} style={{ width: "45px" }} alt="myLogo" />
+        <a href="https://www.robin-skladny.com" target="blank">
+          <img src={myLogo} style={{ width: "45px" }} alt="myLogo" />
+        </a>
       </div>
     </footer>
   );
