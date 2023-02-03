@@ -3,6 +3,14 @@ import Footer from "./components/Footer";
 import GridSection from "./components/GridSection";
 import Navbar from "./components/Navbar";
 import ShoppingCart from "./components/ShoppingCart";
+import img1 from "./assets/images/90s-sneakers-low.jpg";
+import img2 from "./assets/images/old-80s-sneakers-high.jpg";
+import img3 from "./assets/images/classic-70s-sneakers-low.jpg";
+import img4 from "./assets/images/retro-90s-sneakers-low.jpg";
+import img5 from "./assets/images/red-old-80s-sneakers-high.jpg";
+import img6 from "./assets/images/green-roland-v7-sneakers-low.jpg";
+import img7 from "./assets/images/beige-old-80s-sneakers-high.jpg";
+import img8 from "./assets/images/dark-roland-v5-sneakers-low.jpg";
 
 function App() {
   const [productsInCart, setProductsInCart] = useState([]);
@@ -12,57 +20,49 @@ function App() {
       id: 1,
       name: "Vegan Retro Sneaker 1",
       price: 155,
-      image:
-        "https://cdn.shopify.com/s/files/1/0277/7736/8147/products/flamingos-life-retro-90s-sneakers-low-flamingos-life-970783_360x.jpg",
+      image: img1,
     },
     {
       id: 2,
       name: "Vegan Retro Sneaker 2",
       price: 175,
-      image:
-        "https://cdn.shopify.com/s/files/1/0277/7736/8147/products/flamingos-life-old-80s-sneakers-high-flamingos-life-721073_360x.jpg",
+      image: img2,
     },
     {
       id: 3,
       name: "Vegan Retro Sneaker 3",
       price: 135,
-      image:
-        "https://cdn.shopify.com/s/files/1/0277/7736/8147/products/flamingos-life-classic-70s-sneakers-low-flamingos-life-339445_360x.jpg",
+      image: img3,
     },
     {
       id: 4,
       name: "Vegan Retro Sneaker 4",
       price: 155,
-      image:
-        "https://cdn.shopify.com/s/files/1/0277/7736/8147/products/flamingos-life-retro-90s-sneakers-low-flamingos-life-434830_360x.jpg",
+      image: img4,
     },
     {
       id: 5,
       name: "Vegan Retro Sneaker 5",
       price: 175,
-      image:
-        "https://cdn.shopify.com/s/files/1/0277/7736/8147/products/flamingos-life-old-80s-sneakers-high-flamingos-life-128433_360x.jpg",
+      image: img5,
     },
     {
       id: 6,
       name: "Vegan Retro Sneaker 6",
       price: 135,
-      image:
-        "https://cdn.shopify.com/s/files/1/0277/7736/8147/products/flamingos-life-roland-v7-sneakers-low-flamingos-life-836847_360x.jpg",
+      image: img6,
     },
     {
       id: 7,
       name: "Vegan Retro Sneaker 7",
       price: 175,
-      image:
-        "https://cdn.shopify.com/s/files/1/0277/7736/8147/products/flamingos-life-old-80s-sneakers-high-flamingos-life-567566_360x.jpg",
+      image: img7,
     },
     {
       id: 8,
       name: "Vegan Retro Sneaker 8",
       price: 155,
-      image:
-        "https://cdn.shopify.com/s/files/1/0277/7736/8147/products/flamingos-life-roland-v5-sneakers-low-flamingos-life-518225_360x.jpg",
+      image: img8,
     },
   ];
 
