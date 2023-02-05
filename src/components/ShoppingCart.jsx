@@ -43,7 +43,7 @@ function ShoppingCart(props) {
       <div className="offcanvas-body">
         {props.productsInCart.map((product) => {
           return (
-            <div>
+            <div key={product.id}>
               <div>
                 <img
                   src={product.image}
