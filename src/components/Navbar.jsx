@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import ShopCartPic from "../assets/images/shoppCart.png";
+import ShopCartFullPic from "../assets/images/shoppCartFull.png";
 
-function Navbar() {
+function Navbar(props) {
+  const [cartContent, setCartContent] = useState(ShopCartPic);
+
+  useEffect(() => {
+    if (props.productsInCart.length > 0) {
+      console.log(props.productsInCart.length);
+
+      return setCartContent(ShopCartFullPic);
+    }
+  }, [props.productsInCart.length]);
+
   return (
     <div>
       <nav className="nav shadow rounded">
@@ -14,11 +25,12 @@ function Navbar() {
               href="#offcanvasRight"
               aria-controls="offcanvasRight"
             >
-              <img src={ShopCartPic} alt="shopCart" id="shop-cart-symbol" />
+              <div>
+                <img src={cartContent} alt="shopCart" id="shop-cart-symbol" />
+              </div>
             </a>
           </li>
         </ul>
-        <div></div>
       </nav>
     </div>
   );

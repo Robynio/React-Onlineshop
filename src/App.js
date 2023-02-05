@@ -74,7 +74,7 @@ function App() {
 
   return (
     <div>
-      <Navbar />
+      <Navbar productsInCart={productsInCart} />
       <ShoppingCart productsInCart={productsInCart} />
       <GridSection products={products} onAddProduct={onAddProduct} />
       <Footer />
