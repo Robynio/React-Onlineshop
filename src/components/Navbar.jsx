@@ -7,8 +7,6 @@ function Navbar(props) {
 
   useEffect(() => {
     if (props.productsInCart.length > 0) {
-      console.log(props.productsInCart.length);
-
       return setCartContent(ShopCartFullPic);
     }
   }, [props.productsInCart.length]);
